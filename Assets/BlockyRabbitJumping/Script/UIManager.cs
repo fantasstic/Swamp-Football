@@ -90,6 +90,7 @@ public class UIManager : MonoBehaviour {
         gameController.RestartGame();
         menuBestScore.text = gameController.highestScore.ToString();
         gameController.stateGame = StateGame.Home;
+        gamePlayUI.SetActive(false);
         Time.timeScale = 1;
         homeUI.SetActive(true);
         if (pauseUI.active)
@@ -127,7 +128,7 @@ public class UIManager : MonoBehaviour {
 
 	// Call rate
 	public void CallRate(){
-		Application.OpenURL ("https://www.facebook.com/stommedia/");	
+		Application.OpenURL ("https://doc-hosting.flycricket.io/swamp-football-privacy-policy/86025a01-1556-4b3e-a2a3-7a1cf4d62a29/privacy");	
 	}
 
 }
